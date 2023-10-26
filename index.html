@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;500&family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .main {width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: rgb(172, 207, 246); font-family: 'Outfit', sans-serif;}
+    .attribution {width: 300px; height: 300; border-radius:15px; text-align: center; background-color: white; display: flex; flex-direction: column;}
+    .bolded {font-weight: bolder; font-size: 19px;}
+    .illustration {width: 100%; height: 100%;}
+    .img {width: 100%; height: 100%; border-radius:15px 15px 0 0; }
+    .icon {margin: 10px; float:left; display: flex; width: 50px; height: 40px;}
+    .paragraf {font-size: 13px; color: gray;}
+    .annual { border-radius:10px; text-align: center; font-size: 13px; margin-left: 6%; }
+    .payment {float: center; height: 60%; border-radius:10px; background-color: hsl(245, 75%, 52%); color: white; font-size: 12px; font-weight:550;}
+    .payment:hover {float: center; height: 60%; border-radius:10px; background-color: rgb(144, 112, 250);}
+    .content {display: flex; flex-direction: column; padding: 30px ; gap: 20px; padding: 20px;}
+    .annual-row {display: flex; flex-direction: row; width: 100%; height: 80px; justify-content: space-between; background-color: hsl(225, 100%, 98%); align-items: center; border-radius: 10px;}
+    .annual-column {display:flex; flex-direction:column;}
+    .change:hover {color:rgb(144, 112, 250);}
+    .price {font-size: 13px; color: rgb(96, 96, 96); text-align:left ;}
+    .order {color: rgb(142, 142, 142); font-size: 12px; font-weight: 600; }
+    .order:hover {color:darkblue;}
+    .change {color: hsl(245, 75%, 52%); margin: 20px; font-size: 12px; font-weight: 550;}
+
+    
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="attribution">
+      <div class="illustration">
+        <img class="img" src="./images/illustration-hero.svg"/>
+      </div>
+      <div class="content">
+        <div class= "bolded">
+          Order Summary
+        </div>
+        <div class="paragraf">
+          You can now listen to millions of songs, 
+            audiobooks, and podcasts on any
+            device anywhere you like!
+        </div>
+        <div class="annual-row">
+          <div class="icon">
+            <img class="img" src="./images/icon-music.svg"/>
+          </div>
+          <div class="annual-column">
+            <div class="annual">
+              <div class="price">
+              <p><b>Annual Plan</b> $59.99/year</p>
+            </div>
+           </div>
+          </div> 
+          <div class="change">
+            <p>Change</p>
+          </div>
+        </div>
+        <div class="payment">
+          <p>Proceed to Payment</p>
+        </div>
+        <div class="order">
+          <p>Cancel Order</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
